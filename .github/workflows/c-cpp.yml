@@ -13,12 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make main
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
-
+    - name: install dependencies
+      run: sudo apt-get install -y build-essential
+    - name: build
+      run: |
+        g++ -std=c++11 -o main main.cpp
+        ./main
