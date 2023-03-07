@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/InizialiseGame">
+        <file>Assets/inizialiseGame/Yasuo.jpg</file>
+        <file>Assets/inizialiseGame/giphy.gif</file>
+    </qresource>
+</RCC>
