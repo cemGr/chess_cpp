@@ -14,13 +14,26 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        inizialisegame.cpp
+
         inizialisegame.h
+        inizialisegame.cpp
         inizialisegame.ui
 
         testside.h
         testside.cpp
         testside.ui
+
+        winnerwindow.h
+        winnerwindow.cpp
+        winnerwindow.ui
+
+        mainwindow.h
+        mainwindow.cpp
+        mainwindow.ui
+
+        popuptemplate.h
+        popuptemplate.cpp
+        popuptemplate.ui
 
         assetsList.qrc
 

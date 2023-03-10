@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "test.h"
+
+#include "inizialisegame.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -9,25 +10,22 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
-
-
-
-
-
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
-
-
-
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_Initializegame_clicked()
 {
-    Test *t = new Test ();
-    t->show();
+    InizialiseGame *t = new InizialiseGame ();
+    t->setWindowFlags(t->windowFlags() | Qt::WindowStaysOnTopHint);
     t->setGeometry(pos().x(), pos().y(), width(), height());
-    this->~MainWindow();
+    close();
+    t->show();
+}
 
+void MainWindow::on_Exit_clicked()
+{
+    close();
 }
 

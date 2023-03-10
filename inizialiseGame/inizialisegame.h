@@ -6,13 +6,13 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class inizialiseGame; }
 QT_END_NAMESPACE
 
-class inizialiseGame : public QWidget
+class InizialiseGame : public QWidget
 {
     Q_OBJECT
 
 public:
-    inizialiseGame(QWidget *parent = nullptr);
-    ~inizialiseGame();
+    InizialiseGame(QWidget *parent = nullptr);
+    ~InizialiseGame();
 
 private slots:
     void on_pbnStartGame_clicked();
